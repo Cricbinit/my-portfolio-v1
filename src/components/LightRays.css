@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/* Wrapper */
+.light-rays-wrapper {
+  @apply relative w-full h-screen flex justify-center items-center overflow-hidden;
+}
+
+/* Glassmorphism overlay */
+.contact-overlay {
+  @apply relative text-center flex flex-col items-center gap-4
+         w-[90%] sm:w-[400px] p-6 rounded-2xl
+         bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl;
+}
+
+/* Title */
+.contact-title {
+  @apply text-2xl sm:text-3xl font-bold text-white drop-shadow-md mb-2;
+}
+
+/* Contact info cards */
+.contact-card {
+  @apply w-full bg-white/10 px-4 py-2 rounded-xl
+         text-white text-[13px] sm:text-base font-medium text-center
+         cursor-pointer transition transform;
+}
+
+.contact-card:hover {
+  @apply bg-white/20 scale-[1.02] shadow-lg;
+}
+
+/* Social Icons */
+.social-cards {
+  @apply flex justify-center gap-6 mt-2;
+}
+
+.social-cards a {
+  @apply text-white transition transform;
+}
+
+.social-cards a:hover {
+  @apply scale-125;
+}
+
+
+/* Close Button */
+.close-btn {
+  @apply absolute top-3 right-3 text-white bg-white/10 hover:bg-white/20
+         p-1.5 rounded-full transition transform hover:scale-110;
+}
