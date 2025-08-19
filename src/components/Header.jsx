@@ -5,6 +5,7 @@ import Logo from "../assets/logo.svg"
 import Logo1 from "../assets/logo1.svg"
 import Logo2 from "../assets/logo2.svg"
 import Logo3 from "../assets/download (1).jpeg"
+import { FcReading } from "react-icons/fc";
 
 import { motion, AnimatePresence } from "framer-motion";
 import LatestWork from "./LatestWork"
@@ -22,7 +23,8 @@ const Header = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="w-[50px] h-[50px] flex justify-center items-center bg-black rounded-lg"
         >
-          <img className="h-[40px] w-[40px] " src={Image1} alt="" />
+          {/* <img className="h-[40px] w-[40px] " src={Image1} alt="" /> */}
+          <FcReading />
         </motion.div>
 
         {/* Right Card */}
@@ -37,11 +39,11 @@ const Header = () => {
           </Link>
         </motion.div>
       </div>
-      <div className="h-[200px] mt-10 rounded-t-4xl bg-black flex justify-center items-center lg:h-[300px]">
+      <div className="h-[200px] mt-10 rounded-t-4xl bg-black flex justify-center items-center lg:h-[450px]">
         <img
           src={Image2}
           alt=""
-          className="relative bottom-10 h-[220px] lg:h-[300px]"
+          className="relative bottom-10 h-[220px] lg:h-[400px]"
         />
       </div>
       {/*================================ name========================== */}
