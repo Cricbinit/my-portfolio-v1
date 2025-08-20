@@ -1,11 +1,12 @@
 import Image1 from "../assets/icon.webp"
-import Image2 from "../assets/660ed10be19f5033fabd6837_Hero Headshot.avif"
+import Image2 from "../assets/vivek-removebg-preview.png"
 import { LuSquareArrowUpRight } from "react-icons/lu"
 import Logo from "../assets/logo.svg"
 import Logo1 from "../assets/logo1.svg"
 import Logo2 from "../assets/logo2.svg"
 import Logo3 from "../assets/download (1).jpeg"
 import { FcReading } from "react-icons/fc";
+import TextType from './TextType';
 
 import { motion, AnimatePresence } from "framer-motion";
 import LatestWork from "./LatestWork"
@@ -39,13 +40,29 @@ const Header = () => {
           </Link>
         </motion.div>
       </div>
-      <div className="h-[200px] mt-10 rounded-t-4xl bg-black flex justify-center items-center lg:h-[450px]">
-        <img
-          src={Image2}
-          alt=""
-          className="relative bottom-10 h-[220px] lg:h-[400px]"
-        />
+
+      <div className="h-[200px] mt-10 rounded-t-4xl flex justify-center items-center lg:h-[450px]">
+        <h1 className="text-3xl lg:text-5xl xl:text-7xl font-bold tracking-tight bg-gradient-to-r from-white to-blue-500 bg-clip-text text-transparent">
+          <TextType
+            text={[
+              "Debugging is my cardio ",
+              "I speak fluent JavaScript ",
+              "404: Sleep Not Found ",
+              "Turning coffee into code ",
+              "Ctrl + S is my superpower "
+            ]}
+            typingSpeed={75}
+            pauseDuration={1500}
+            showCursor={true}
+            cursorCharacter="_"
+          />
+        </h1>
       </div>
+
+
+
+
+
       {/*================================ name========================== */}
       <div className="text-center relative lg:bottom-15 bottom-5 px-4">
         <motion.h1
